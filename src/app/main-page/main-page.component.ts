@@ -8,14 +8,14 @@ import { BudgetItem } from '../../shared/models/budget-item.model';
 })
 export class MainPageComponent implements OnInit {
 
-  budgetItem: BudgetItem[] = new Array<BudgetItem>();
+  budgetItems: BudgetItem[] = new Array<BudgetItem>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  additem(newItem: BudgetItem){
-    this.budgetItem.push(newItem);
+  addItem(newItem: BudgetItem){
+    this.budgetItems.push(newItem);
   }
 }
